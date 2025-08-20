@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Text Word & Character Counter",
+  "version": "1.0",
+  "description": "Shows word and character count of selected text on any website.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
